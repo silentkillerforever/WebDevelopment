@@ -9,18 +9,17 @@ function Card({title,imageURL, body}){
             </div>
             <div className="card-content">
                 <div className="card-title">
-                <h3>{title}</h3>
+                    <h3>{title}</h3>
+                </div>
+                <div className="card-body">
+                    <p>{body}</p>
+                </div>
+                <div className="btn">
+                    <button>
+                        <a href="https://www.google.com" className="anchor">VIEW MORE</a>
+                    </button>
+                </div>
             </div>
-            <div className="card-body">
-                <p>{body}</p>
-            </div>
-            <div className="btn">
-                <button>
-                    View more
-                </button>
-            </div>
-            </div>
-            
         </div>
     )
 }
