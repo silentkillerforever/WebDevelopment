@@ -6,15 +6,17 @@ import CardPractice from './components/CardPractice';
 // import { Home } from './components/Home';
 
 // import Chores from './components/Chores';
+
+
+function Welcome(props){
+  return(
+    <h1>Hello {props.name}!</h1>
+  )
+}
 function App() {
   return (
     <div className="App">
-      {/* <Card
-      title='Card'
-      imageURL={king}
-      body='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book'/> */}
-      <h1 className='hh1'>Ajay</h1>
-      <h1 className='hh2'>Ajay</h1>
+      <Welcome/>
       <CardPractice/>
     </div>
   );
